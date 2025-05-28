@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table, th, td {
+    border: 2px solid #ccc;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+
+  .container {
+      display: flex;
+      align-items: center; /* 垂直置中 */
+      gap: 20px; /* 圖片與文字的間距 */
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+  .container img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+   }
+
+  .text {
+      font-size: 16px;
+      line-height: 1.5;
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 比例 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto; /* 置中 */
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .artist {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .artist img {
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .artist img:hover {
+    transform: scale(1.05); /*圖片放大1.5倍*/
+  }
+  
