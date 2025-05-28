@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>i-dle</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e0f7ff;
+    }
+
+    header {
+      background-image: linear-gradient(to bottom, rgba(61, 66, 173, 0.574), rgba(63, 145, 203, 0.337)), 
+                        url("2.gif");
+      background-size: cover;
+      background-position: center 30%;
+      color: white;
+      padding: 2rem 1rem;
+      position: relative;
+    }
+
+    header h1 {
+      margin-left: 2.5rem;
+    }
+    .info h2 {
+  margin-top: 5rem; /* 或者你可以調整成 1rem、3rem 等 */
+}
+
+    nav {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 3.5rem;
+      left: 1rem;
+      background-color: #c1eefb;
+      list-style: none;
+      padding: 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-menu li {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .nav-menu li:last-child {
+      border-bottom: none;
+    }
+
+    .nav-menu li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .works  {
+  margin-left: -6rem; /* 左偏移 */
+}
+
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .profile img {
+      width: 250px;
+      border-radius: 10px;
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .info h2 {
+      margin-top: 0;
+    }
+
+    .info p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .back {
+      margin-top: 2rem;
+    }
+
+    .back a {
+      text-decoration: none;
+      background-color: #3db8ff;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .back a:hover {
+      background-color: #239fd9;
+    }
+
+    .member {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .member img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .details {
+      line-height: 1.6;
+    }
+    .member:last-child {
+      border-bottom: none;
+    }
+    
+.video-left {
+  margin-left: -15rem; /* 往左偏移 */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 比例 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto; /* 置中 */
+    justify-content: center;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav id="menu">&#9776;</nav>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="MUSICIANS.html">組合</a></li>
+      <li><a href="ACTORS.html">演員</a></li>
+      <li><a href="ENTERTAINERS.html">其他藝人</a></li>
+    </ul>
+    <h1>CUBE</h1>
+  </header>
+<br><br><br>
+  <div class="container">
+    <div class="profile">
+      <img src="https://thebiaslist.com/wp-content/uploads/2025/05/i-dle-good-thing.jpg" alt="藝人照片">
+      <div class="info">
+        <p></p>
+        <h2>i-dle</h2>
+        <p><strong>職業：</strong>女子偶像團體</p>
+        <p>
+         以「打破常規」、「女性力量」為概念的女團，是韓國演藝圈裡少數的「創作型女團」，團體的主打歌基本上都出自隊長小娟之手，將各成員們的特色與優勢發揮到極致，讓觀眾們有種整曲都是killing part的感覺。
+        </p><br><br><br><br>
+        <h2>成員</h2>
+    <div class="member">
+        <img src="http://www.cubeent.co.kr/files/attach/images/4240922/737/251/004/35e0a04f641f11d33218f1286df4f2e8.jpg" alt="Miyeon">
+        <div class="details">
+            <strong>曹薇娟 Miyeon</strong><br>
+            - 生日：1997年1月31日<br>
+            - 定位：主唱<br>
+            - 國籍：韓國
+            - 2022年4月7日，發行個人迷你一輯《MY》solo
+        </div>
+    </div>
+
+    <div class="member">
+        <img src="http://www.cubeent.co.kr/files/attach/images/4240922/252/271/004/2e98353ecb5b3339496ecfa03aa6d089.jpg" alt="Minnie">
+        <div class="details">
+            <strong>金米妮 Minnie</strong><br>
+            - 生日：1997年10月23日<br>
+            - 定位：主唱<br>
+            - 國籍：泰國
+            - 2025年1月21日，發行個人迷你專輯《HER》
+        </div>
+    </div>
+
+    <div class="member">
+        <img src="https://img.kpopdata.com/upload/content/805/625/3712621d9a8e02064222.jpg" alt="Soyeon">
+        <div class="details">
+            <strong>田小娟 Soyeon</strong><br>
+            - 生日：1998年8月26日<br>
+            - 定位：隊長、主Rapper<br>
+            - 國籍：韓國
+            - 2017年11月5日，以單曲《Jelly》個人出道<br>
+            - 2018年2月28日，第二首個人單曲《Idle Song》發行
+        </div>
+    </div>
+
+    <div class="member">
+        <img src="https://p3-pc-sign.douyinpic.com/tos-cn-i-0813c000-ce/o0bzET9AihEitCZAZwUEy4HAeIWsBEA0AfMIGe~tplv-dy-aweme-images-v2:3000:3000:q75.webp?biz_tag=aweme_images&from=327834062&lk3s=138a59ce&s=PackSourceEnum_SEARCH&sc=image&se=false&x-expires=1750716000&x-signature=nGBui%2FInhb8ZNDegQk6a6yhq%2BIE%3D" alt="Yuqi">
+        <div class="details">
+            <strong>宋雨琦 Yuqi</strong><br>
+            - 生日：1999年9月23日<br>
+            - 定位：主舞、副唱<br>
+            - 國籍：中國
+            - 2021年5月6日，發行個人首張數碼單曲專輯《A Page》
+        </div>
+    </div>
+
+    <div class="member">
+        <img src="http://www.cubeent.co.kr/files/attach/images/4240922/623/241/004/359533d537ede39ae70389ad7ec846d6.jpg" alt="Shuhua">
+        <div class="details">
+            <strong>葉舒華 Shuhua</strong><br>
+            - 生日：2000年1月6日<br>
+            - 定位：副唱、門面、忙內<br>
+            - 國籍：台灣
+        </div>
+    </div><br><br>
+
+        <p>
+          <div class="works">
+          <h2><strong>代表作品：</strong></h2><br>
+          <div class="member">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/6/6f/%28G%29I-DLE%E9%A6%96%E5%BC%B5%E8%BF%B7%E4%BD%A0%E5%B0%88%E8%BC%AF%E3%80%8AI_am%E3%80%8B.jpg" alt="Shuhua">
+          <div class="details">
+            <strong>I am</strong><br>
+            - 首張迷你專輯<br>
+            - 發行日期：2018年5月2日<br>
+            - 收錄曲目：LATATA(主打)、$$$、MAZE、DON'T TEXT ME、What's in Your House?、Hear Me
+          </div>
+        </div>
+        <div class="member">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/f/fb/%28G%29I-DLE%E6%97%A5%E6%9C%AC%E9%A6%96%E5%BC%B5%E8%BF%B7%E4%BD%A0%E5%B0%88%E8%BC%AF%E3%80%8ALATATA%E3%80%8B%E9%80%9A%E5%B8%B8%E7%9B%A4%E5%B0%81%E9%9D%A2.jpg" alt="Shuhua">
+          <div class="details">
+            <strong>LATATA</strong><br>
+            - 日本首張迷你專輯<br>
+            - 發行日期：2019年7月31日<br>
+            - 收錄曲目：LATATA(日語主打)、Light My Fire、MAZE(日語)、For You
+          </div>
+        </div>
+        <div class="member">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/6/69/G%29I-DLE%E7%AC%AC%E4%BA%8C%E5%BC%B5%E8%BF%B7%E4%BD%A0%E5%B0%88%E8%BC%AF%E3%80%8AI_made%E3%80%8B%E5%B0%81%E9%9D%A2.jpg" alt="Shuhua">
+          <div class="details">
+            <strong>I made</strong><br>
+            - 第二張迷你專輯<br>
+            - 發行日期：2019年2月26日<br>
+            - 收錄曲目：Senorita(主打)、What′s Your Name、Put It Straight、Give Me Your、Blow Your Mind
+          </div>
+        </div>
+        <div class="member">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/e/e0/%28G%29I-DLE%E8%BF%B7%E4%BD%A0%E4%B8%89%E8%BE%91%E3%80%8AI_trust%E3%80%8B.jpg" alt="Shuhua">
+          <div class="details">
+            <strong>I trust</strong><br>
+            - 第三張迷你專輯<br>
+            - 發行日期：2020年4月6日<br>
+            - 收錄曲目：Oh my god(主打)、Luv U、Maybe、LION、Oh my god (English Ver.)
+          </div>
+        </div>
+        <div class="member">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/a/ac/%28G%29I-DLE-DUMDi_DUMDi.jpg" alt="Shuhua">
+          <div class="details">
+            <strong>Dumdi Dumdi</strong><br>
+            - 首張單曲專輯<br>
+            - 發行日期：2020年8月3日<br>
+            - 收錄曲目：DUMDi DUMDi、i'M THE TREND
+          </div>
+        </div>
+        <div class="member">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/0/02/%28G%29I-DLE%E6%97%A5%E6%9C%AC%E7%AC%AC%E4%BA%8C%E5%BC%A0%E8%BF%B7%E4%BD%A0%E4%B8%93%E8%BE%91%E3%80%8AOh_my_god%E3%80%8B%E9%80%9A%E5%B8%B8%E7%9B%A4%E5%B0%81%E9%9D%A2.jpg" alt="Shuhua">
+          <div class="details">
+            <strong>Oh my god</strong><br>
+            - 第二張日本迷你專輯<br>
+            - 發行日期：2020年8月26日<br>
+            - 收錄曲目：Oh my god(日語主打)、Uh-Oh（日語）、Senorita（日語）、Tung-Tung (Empty)、DUMDi DUMDi（日語）
+          </div>
+        </div>
+        <div class="member">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/6/64/%28G%29I-DLE%E8%BF%B7%E4%BD%A0%E5%9B%9B%E8%BE%91%E3%80%8AI_burn%E3%80%8B.jpg" alt="Shuhua">
+          <div class="details">
+            <strong>I burn</strong><br>
+            - 第四張迷你專輯<br>
+            - 發行日期：2021年1月11日<br>
+            - 收錄曲目：(寒)（HANN (Alone in winter)）(主打)、(火花)（HWAA）、MOON、Where is love、	LOST、DAHLIA、 火/花（HWAA (台灣限量版 Ver.)）
+          </div>
+          </div>
+          <div class="member">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/a/ad/%28G%29I-DLE-1st_Full_Album.jpg" alt="Shuhua">
+          <div class="details">
+            <strong>I NEVER DIE</strong><br>
+            - 首張正規專輯<br>
+            - 發行日期：2022年3月14日<br>
+            - 收錄曲目：TOMBOY(主打)、Never Stop Me、VILLAIN DIES、ALREADY、POLAROID、ESCAPE、LIAR、MY BAG
+          </div>
+        </div>
+        <div class="member">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/a/ae/%28G%29I-DLE_-_I_love.JPG" alt="Shuhua">
+          <div class="details">
+            <strong>I love</strong><br>
+            - 第五張迷你專輯<br>
+            - 發行日期：2022年10月17日<br>
+            - 收錄曲目：Nxde(主打)、LOVE、Change、Reset、Sculpture、X-File
+          </div>
+        </div>
+        <div class="member">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/3/39/%28G%29I-DLE_-_I_feel.png" alt="Shuhua">
+          <div class="details">
+            <strong>I feel</strong><br>
+            - 第六張迷你專輯<br>
+            - 發行日期：2023年5月15日<br>
+            - 收錄曲目：Queencard(主打)、Allergy(先行曲)、Lucid、All Night、Paradise、Peter Pan
+          </div>
+        </div>
+          <div class="member">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/6/66/%28G%29I-DLE_-_HEAT.png" alt="Shuhua">
+          <div class="details">
+            <strong>HEAT</strong><br>
+            - 首張英語迷你專輯<br>
+            - 發行日期：2023年10月6日<br>
+            - 收錄曲目：I Want That(主打)、I DO(先行曲)、Eyes Roll、Flip It、Tall Trees
+          </div>
+        </div>
+        
+        <div class="member">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/2/21/%28G%29I-DLE_-_2.JPG" alt="Shuhua">
+          <div class="details">
+            <strong>2</strong><br>
+            - 第二張正規專輯<br>
+            - 發行日期：2024年1月29日<br>
+            - 收錄曲目：Super Lady(主打)、Wife(先行曲)、Revenge、Doll、Vision、7Days、Fate、Rollie
+          </div>
+        </div>
+        <div class="member">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/0/0d/%28G%29I-DLE_-_I_Sway.JPG" alt="Shuhua">
+          <div class="details">
+            <strong>I SWAY</strong><br>
+            - 第七張迷你專輯<br>
+            - 發行日期：2024年7月8日<br>
+            - 收錄曲目：Klaxon(主打)、Last Forever、Bloom、Neverland
+          </div>
+        </div>
+        <div class="member">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/0/0e/I-dle_-_We_are_i-dle.jpeg" alt="Shuhua">
+          <div class="details">
+            <strong>We are i-dle</strong><br>
+            - 紀念出道7週年所推出的特別迷你專輯<br>
+            - 發行日期：2025年5月2日<br>
+            - 收錄曲目：此迷你專輯將2018～2021年發行的主打歌重新錄製成「i-dle ver.」
+          </div>
+        </div>
+        <div class="member">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMkAAAD7CAMAAAD3qkCRAAAAflBMVEX////5+fkAAAD8/Pzm5ubx8fGlpaX09PSxsbFubm7d3d3l5eXMzMwmJibi4uJRUVHV1dV2dnZkZGQ4ODg9PT0cHBzGxsadnZ2Tk5OKiop/f38ICAgvLy8nJydYWFisrKxeXl65ublKSkoXFxcRERHAwMBDQ0OFhYU5OTlNTU2PZTpxAAADvUlEQVR4nO3X23KiQBSF4XZzEgQUT6h4jKeZ93/B2btxMplUzYVjp2pVav0XiSEU8tl0g27gvkcDRwlalOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U/FUUfd7w+jGfLozk8TtL3rck/9j16woiuW96S7kYT/otzez1oz5ZCEnWydDGZSLa0LbElYxePuyThZAkCij099Ikub4YzaR7+ajPFuTqOvSStUns+opFajt29nHq68tslESf1of49Xd/FGYVnpkk2cpuKmJzfW/TJEvfqi4v/7zVdTe+bO3vKK1dvc70ejzKbH4Is9KFkjQqqaQs/ETRCaOnORXf+6d+6P8+6MtKKj9scznnC5kHOINAkoGeYOlGeo2pZOKindwGLhXZr/Q814+d4ssi3+S6MXG612w1TaJWtrHNsmWIG1CYMRnaUMxlH0U3ad3K5r2Oy5v+pxXpl+hsKicXxXujtjKzbY3oJueOH8bthQI9rYxlXex0XFRxOaTm0h+6rZlWsul3yerk1GxFFqm7eqQ7q7LMrrrjNcApBJKcpWv9haSj09ykWrq7nxQ6HXSQ+up+nqhXx8TedS6/WwU4hUCS3J/QxE8Z/ainiS3Ji3vh4rTtH1xiWwA2Zd6PV6Urgg7kpTld01MzCXEKgSR2c5QfdqitvdpHdnXlZkjvdquJ3OAoZ12tdLJvdFWr/MZuYfPE1UFuKqGe6u0y2tgZp4+VtrzJvvQLcr946QPAduAvsVinemXI2D8RxHeoGe9+Stc/crmbnwou3tjY7Dt/zWm1Wm/pcG5XVysXf+4zXYAnb0rMApxBKImurtv+k22lS/2zycrPnenj846u6VhsEumtJpF8YrtExa3fJcRdPpRksDwVj0925Kd45LKyPebFx52G7SkqdEv2/ghTr/J0Gea7DL/9/l/RF34v5pjgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOBFCV6U4EUJXpTgRQlelOD1jSS/AMX8HIZz4Ps+AAAAAElFTkSuQmCC" alt="Shuhua">
+          <div class="details">
+            <strong>We are</strong><br>
+            - 第八張迷你專輯<br>
+            - 發行日期：2025年5月19日<br>
+            - 收錄曲目：Good Thing(主打)、Girlfriend、Love Tease、Chain、Unstoppable、If You Want
+          </div>
+        </div>
+        <div class="video-wrapper">
+  <iframe class="left -15rem" width="560" height="315" 
+  src="https://www.youtube.com/embed/CcxUYln_8Zc?si=5cQiShOOi1CbJKIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+        </div>
+        </p>
+        <p>
+          <strong>社群連結：</strong><br>
+          <a href="https://www.instagram.com/i_dle_official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a> |
+          <a href="https://youtube.com/@official_i_dle?si=y2aoGu_UGKlucSS7" target="_blank">YouTube</a> |
+          <a href="https://x.com/official_i_dle" target="_blank">X</a> |
+          <a href="https://weverse.io/i-dle/feed" target="_blank">Weverse</a> |
+          <a href="https://open.spotify.com/artist/2AfmfGFbe0A0WsTYm0SDTx?si=bnS7EbRISYqWO4rLfR9aew&dl_branch=1&nd=1&dlsi=5d39d49d65f04178" target="_blank">Spotify</a>
+        </p>
+      </div>
+    </div>
+    <div class="back">
+      <a href="MUSICIANS.html">← 返回藝人列表</a>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById("menu");
+    const navMenu = document.getElementById("navMenu");
+    menuBtn.addEventListener("click", () => {
+      navMenu.style.display = navMenu.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!navMenu.contains(e.target) && e.target !== menuBtn) {
+        navMenu.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>藝人介紹 - CUBE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e0f7ff;
+    }
+
+    header {
+      background-image: linear-gradient(to bottom, rgba(61, 66, 173, 0.574), rgba(63, 145, 203, 0.337)), 
+                        url("1.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 2rem 1rem;
+      position: relative;
+    }
+
+    header h1 {
+      margin-left: 2.5rem;
+    }
+
+    nav {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 3.5rem;
+      left: 1rem;
+      background-color: #c1eefb;
+      list-style: none;
+      padding: 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-menu li {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .nav-menu li:last-child {
+      border-bottom: none;
+    }
+
+    .nav-menu li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .profile img {
+      width: 250px;
+      border-radius: 10px;
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .info h2 {
+      margin-top: 0;
+    }
+
+    .info p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .back {
+      margin-top: 2rem;
+    }
+
+    .back a {
+      text-decoration: none;
+      background-color: #3db8ff;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .back a:hover {
+      background-color: #239fd9;
+    }
+    .member {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .member img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .details {
+      line-height: 1.6;
+    }
+    .member:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav id="menu">&#9776;</nav>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="MUSICIANS.html">組合</a></li>
+      <li><a href="ACTORS.html">演員</a></li>
+      <li><a href="ENTERTAINERS.html">其他藝人</a></li>
+    </ul>
+    <h1>CUBE</h1>
+  </header>
+
+  <div class="container">
+    <div class="profile">
+      <img src="data:image/jpeg;base64,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" alt="藝人照片">
+      <div class="info">
+        <h2>李尚俊 </h2>
+        <p><strong>職業：</strong>搞笑藝人</p>
+        <p>
+        是韓國喜劇演員，在SBS 搞笑演唱會出道 。
+        </p><br><br><hr>
+        <strong>參與戲劇、節目：</strong><br>
+          - 2025 KBS Joy, KBS2《尋找舊情人》<br>
+          - 2025 MBC《拯救我的第1次月經》<br>
+          - 2024 Netflix《 喜劇復仇》<br>
+          - 2024 KBS2《搞笑演唱會》<br>
+          - 2024 ENA《Field Marble》<br>
+          - 2024 ENA PLAY Royal SComjkkak <br>
+          - 2024 ENA PLAY 辣老闆iHQ《Taste Judge》k<br>
+          - 2023 tvN《家族》 飾演班主任<br>
+          - 2023 tvN《偷竊者：七朝鮮通寶》 飾演Bat<br>
+          - 2022 Channel A《現在的男人們的生活-新郎班》 <br>
+          - 2022 Mnet《Ttuktak的逆襲》 <br>
+          - 2022 KBS1《偵察兵3.0》<br> 
+          - 2022 iHQ《自給自足遠徵》<br>
+          -  2021 網路劇《人間天堂》<br>
+          - 2021 TV Chosun《配角的黃金時代》 <br>
+          - 2021 《愛情指南》 <br>
+          - 2020 AXN《別擔心#》 <br>
+          - 2020 SBS《叢林的法則 IN 科倫》 <br>
+          - 2019 SBS《工匠》<br> 
+          - 2017 MBC《保格媽媽》<br>
+          - 2017 MBC《情景喜劇 Borg Mom》<br> 
+          - 2017 正花TV《Chinau》 <br>
+          - 2017 MBC《哥哥秀》 <br>
+          - 2017 JTBC《今天的好日子》 <br>
+          - 2015 KBS2《特別電視劇 - 搞笑女人》 飾演陳尚前輩<br>
+          - 2015 KBS《有一天突然成為局外人》<br> 
+          - 2015 喜劇TV《時間之家》 <br>
+          - 2013 tvN《時間探索者們去吧》 <br>
+          - 2013 MBC《美好的一天》 <br>
+          - 2012 Mnet《廣泛演藝新聞》<br>
+          - 2012 MBCBC 《美好的一天》<br> 
+          - 2012 Mnet《廣泛演藝新聞》 <br>
+          - 2012 MBCBC 《美好的一天》<br> 
+          - 2012 Mnet《廣泛演藝新聞》 <br>
+          - 2012 MBCBC《美好的一天》 <br>
+          - 2012 Mnet《廣泛演藝新聞》 <br>
+          - 2003 SBS《尋找笑料的人》<br><br>
+
+        <strong>參與廣播：</strong><br>
+          - 2016 SBS PowerFM《李國柱的青春街頭》<br>
+          - 2016 MBC StandardFM《星夜》
+        </p><hr>
+        <p>
+          <strong>社群連結：</strong><br>
+          <a href="https://www.instagram.com/grunaaaaaaaaaaaaaaaaaaaaa/" target="_blank">Instagram</a> 
+        </p>
+      </div>
+    </div>
+    <div class="back">
+      <a href="ENTERTAINERS.html">← 返回藝人列表</a>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById("menu");
+    const navMenu = document.getElementById("navMenu");
+    menuBtn.addEventListener("click", () => {
+      navMenu.style.display = navMenu.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!navMenu.contains(e.target) && e.target !== menuBtn) {
+        navMenu.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

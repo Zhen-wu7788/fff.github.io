@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>藝人介紹 - CUBE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e0f7ff;
+    }
+
+    header {
+      background-image: linear-gradient(to bottom, rgba(61, 66, 173, 0.574), rgba(63, 145, 203, 0.337)), 
+                        url("1.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 2rem 1rem;
+      position: relative;
+    }
+
+    header h1 {
+      margin-left: 2.5rem;
+    }
+
+    nav {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 3.5rem;
+      left: 1rem;
+      background-color: #c1eefb;
+      list-style: none;
+      padding: 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-menu li {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .nav-menu li:last-child {
+      border-bottom: none;
+    }
+
+    .nav-menu li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .profile img {
+      width: 250px;
+      border-radius: 10px;
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .info h2 {
+      margin-top: 0;
+    }
+
+    .info p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .back {
+      margin-top: 2rem;
+    }
+
+    .back a {
+      text-decoration: none;
+      background-color: #3db8ff;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .back a:hover {
+      background-color: #239fd9;
+    }
+    .member {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .member img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .details {
+      line-height: 1.6;
+    }
+    .member:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav id="menu">&#9776;</nav>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="MUSICIANS.html">組合</a></li>
+      <li><a href="ACTORS.html">演員</a></li>
+      <li><a href="ENTERTAINERS.html">其他藝人</a></li>
+    </ul>
+    <h1>CUBE</h1>
+  </header>
+
+  <div class="container">
+    <div class="profile">
+      <img src="data:image/jpeg;base64,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" alt="藝人照片">
+      <div class="info">
+        <h2>朴美善</h2>
+        <p><strong>職業：</strong>演員、主持人</p>
+        <p>
+        - 戲劇代表作品為《順風婦產科》在裡面飾演美月的媽媽<br>
+        - 主持代表作品為《歡樂在一起》和《我們結婚了》第二季較為眾人所知
+        </p><br><br><hr>
+        <strong>參與戲劇、節目：</strong><br>
+          - 2025 U+tv 《初戀》  飾演許泰雄<br>
+          - 2024 ENA 《奈布》<br>
+          - 2024 MBN 《差距與憤世嫉俗》<br>
+          - 2024 TVING 《禹女王》  飾演青春南武<br>
+          - 2022 網路劇 《解除武裝的羅曼史》  飾演約旦<br>
+          - 2025 MBC 《拜託了媽媽》
+          - 2024 《第二次婚姻戰爭，生還是死》<br>
+          - 2024 EBS 《租屋搜尋計畫》<br>
+          - 2024 TV北韓《現在我一個人了》 <br>
+          - 2024 MBN、K-STAR 《大人不知道的高校媽媽爸爸5》<br>
+          - 2024 KBS1 《非常私人的旅程》<br>
+          - 2024 MBN、K-STAR 《大人不知道的高校媽媽爸爸4》<br>
+          - 2023 tvN STORY 《今天的主角》<br>
+          - 2023 JTBC 《綠屯歸來》<br>
+          - 2023 SBS 《扁億高孔致利5：對決》<br>
+          - 2023 MBN 《你真棒》<br>
+          - 2023 MBN 《大人不知道的高校爸媽3》<br>
+          - 2023 JTBC 《韓非利(韓文哲的黑盒子評論)<br>
+          - 2022 Channel S 《進擊的姐姐》<br>
+          - 2022 TV Chosun 《旅行的味道》<br>
+          - 2022 SBS 《扁鵲空之裡4：真實對決》<br>
+          - 2022 MBN 《阿凡達歌王》 <br>
+          - 2022 MBN 《大人不知道的高校爸媽2》<br>
+          - 2022 KBS2 《朱爺的豐收年》<br>
+          - 2022 SBS FiL 《朝鮮課堂 - 王的語文老師》<br>
+          - 2021 KBS1 《健身餐廳》<br>
+          - 2021 MBC 《MBC Is Buck》<br>
+          - 2021 SBS 《我的夢幻之家》<br>
+          - 2020 OBS 《Is Bucks》<br>
+          - 2021 SBS 《我的夢幻屋《ONtact市民談話-談新冠時代》<br>
+          - 2020 JTBC 《我當不了第一》<br>
+          - 2020 Channel A 《眼神接觸》<br>
+          - 2020 MBC 《Oh！我的搭檔 》<br>
+          - 2019 tvN《孩子們的想法》<br>
+          - 2019 KBS2《Stand Up》<br>
+          - 2019 JTBC《美味的故事 - 奇蹟食物》<br>
+          - 2018 Channel A《世界特別節目 - 朋友》<br>
+          - 2018 KBS2《街頭盛宴》<br>
+          - 2018 TV《世界特別節目 - 朋友》<br> 
+          - 2018 KBS2《街頭盛宴》<br>
+          - 2018 TV《世界赤手拳》 <br>
+          - 2017 tvN《逃出巢穴3》<br>
+          - 2017 EBS1《脾氣暴躁的夫婦》<br>
+          - 2017 MBC《排名秀123》<br>
+          - 2017 KBS Joy《Doctor House》<br>
+          - 2016 TV《偶像派對》<br>
+          - 2015 KBS 《全球半上會 - 國際公寓》<br>
+          - 2015 Channel A 《老婆生氣了 - 老公的餐桌》<br>
+          - 2014 tvN 《朱炳鎮的方子殿》<br>
+          - 2014 KBS 《狐狸女孩》<br>
+          - 2013 KBS2 《媽媽咪呀》<br>
+          - 2013 KBS 《大餐人生》<br>
+          - 2013 KBS 《報紙》<br>
+          - 2013 MBN 《野田秀 Pang Pang Pang》<br>
+          - 2013 KBS2 《快樂星期天》<br>
+          - 2013 MBC 《盲測180》<br>
+          - 2012 tvNtvN 《你的丈夫怎麼樣了？ 》<br>
+          - 2012 SBS《驚人的競爭-Star King》<br>
+          - 2011 MBC《明星試鏡-偉大的誕生2》<br>
+          - 2011 Channel A《音盲叛逆Encore》<br>
+          - 2011 SBS Plus《雖然又討厭你了》 <br>
+          - 2010 SBS《親密筆記3》<br>
+          - 2009 SBS《富婆詞典》<br>
+          - 2009 MBC《三個輪子》<br>
+          - 2008 MBC《我們結婚了》<br>
+          - 2008 KBS 電視劇《哈哈哈哈夫婦》<br> 
+          - 2008 SBS《韓國公務員考試》<br> 
+          - 2008 tvN 《老天》<br>
+          - 2008 MBC《快樂的英雄》<br>
+          - 2008 SBS《全球主婦智力競賽節目-墊腳石》<br>
+          - 2008 SBS《在那裡！不存在嗎？ Plus》<br>
+          - 2007 CTS Family《樸美善的前夜時間》<br>
+          - 2007 KBS2《春光乍洩3》<br>
+          - 2007 YTN Star《壞主婦》<br>
+          - 2007 KBS1《亞洲愛情》<br>
+          - 2006 SBS《好好生活吧》<br>
+          - 2005 MBC《Tok Tok Tok 2PM》<br>
+          - 2005 MBC《開心話匣子好朋友》<br>
+          - 2002 KBS2《搞笑演唱會》<br>
+          - 2002 SBS《抓住瞬間-世界上發生了這樣的事》<br>
+          - 2002 KBS2《發現世界尤里卡》<br>
+          - 2002 MBC《危機中的男人》<br>
+          - 2001 KBS2《快樂頻道》<br>
+          - 2002 MBC《危機中的男人》<br> 
+          - 2001 KBS2《快樂頻道》<br>
+          - 1999 MBC《戀愛工作室》<br>
+          - 1998 SBS《Video Dispatch Q》<br>
+          - 1995 MBC《金烈戰警》<br>
+          - 1995 MBC《TV Park》<br>
+          - 1995 東亞電視台《Show Missy Republic》<br>
+          - 1992 SBS《高中時代》<br>
+          - 1992 SBS《週六晚上7點笑起來真好》<br>
+          - 1990 MBC《喜劇《世間萬物》<br>
+          - 1988 MBC《青春進行曲》<br>
+          - 1988 MBC《星期天星期天晚上》<br><br>
+
+        <strong>參與電影：</strong><br>
+          - 2012 音盲診所<br>
+          - 2009 清潭菩薩<br>
+          - 2005 升天的少年<br>
+          - 2002 俠盜一號2<br>
+          - 2002 俠盜一號<br>
+          - 1990 英雄無敵<br>
+          - 1989 登陸行動<br>
+          - 1989 三國志和大基石<br><br>
+
+           <strong>參與廣播：</strong><br>
+          - 2010 SBS 愛情FM《李鳳元、樸美善的娃娃秀》<br>
+          - 2008 SBS 愛情FM《李鳳元、樸美善的我們家的廣播》<br>
+          - 2003 SBS 愛情FM 金興國、樸美善的韓國特別節目<br>
+          - 1997 MBC 標準FM《全宥FM、金興國的美善之道》
+        </p><hr>
+        <p>
+          <strong>社群連結：</strong><br>
+          <a href="https://www.instagram.com/misun_park15/" target="_blank">Instagram</a> 
+        </p>
+      </div>
+    </div>
+    <div class="back">
+      <a href="ENTERTAINERS.html">← 返回藝人列表</a>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById("menu");
+    const navMenu = document.getElementById("navMenu");
+    menuBtn.addEventListener("click", () => {
+      navMenu.style.display = navMenu.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!navMenu.contains(e.target) && e.target !== menuBtn) {
+        navMenu.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

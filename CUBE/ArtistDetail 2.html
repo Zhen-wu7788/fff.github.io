@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>藝人介紹 - CUBE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e0f7ff;
+    }
+
+    header {
+      background-image: linear-gradient(to bottom, rgba(61, 66, 173, 0.574), rgba(63, 145, 203, 0.337)), 
+                        url("1.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 2rem 1rem;
+      position: relative;
+    }
+
+    header h1 {
+      margin-left: 2.5rem;
+    }
+
+    nav {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 3.5rem;
+      left: 1rem;
+      background-color: #c1eefb;
+      list-style: none;
+      padding: 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-menu li {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .nav-menu li:last-child {
+      border-bottom: none;
+    }
+
+    .nav-menu li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .profile img {
+      width: 250px;
+      border-radius: 10px;
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .info h2 {
+      margin-top: 0;
+    }
+
+    .info p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .back {
+      margin-top: 2rem;
+    }
+
+    .back a {
+      text-decoration: none;
+      background-color: #3db8ff;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .back a:hover {
+      background-color: #239fd9;
+    }
+    .member {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .member img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .details {
+      line-height: 1.6;
+    }
+    .member:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav id="menu">&#9776;</nav>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="MUSICIANS.html">組合</a></li>
+      <li><a href="ACTORS.html">演員</a></li>
+      <li><a href="ENTERTAINERS.html">其他藝人</a></li>
+    </ul>
+    <h1>CUBE</h1>
+  </header>
+
+  <div class="container">
+    <div class="profile">
+      <img src="https://static.wikia.nocookie.net/kpop/images/d/d0/NOWADAYS_2025_Season%27s_Greetings_group_concept_photo.png/revision/latest/scale-to-width-down/1200?cb=20241130074908" alt="藝人照片">
+      <div class="info">
+        <h2>NOWADAYS</h2>
+        <p><strong>職業：</strong>男子偶像團體</p>
+        <p>
+        是旗下的五人男子音樂組合，2024年4月2日，發行出道單曲專輯《NOWADAYS》，以主打曲〈OoWee〉正式出道。
+        </p><br><br><hr>
+        <strong>成員：</strong><br>
+          - 成員有炫彬、潤、然宇、振赫、詩潤<br>
+          - 由炫彬擔任隊長<br>
+        </p><hr>
+    <div class="member">
+            <img src="data:image/jpeg;base64,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" alt="Shuhua">
+          <div class="details">
+            <strong>NOWADAYS</strong><br>
+            - 首張單曲專輯<br>
+            - 發行日期：2024年4月2日<br>
+            - 收錄曲目：OoWee(主打)、NOW、TICKET
+            </div>
+        </div>
+        <div class="member">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHgAeAMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAEBgAFAQMHAv/EAEYQAAECBAQDBgIGBgYLAAAAAAECAwAEBREGEiExE0FRBxQiYYGRcbEjJDJCodEVYnKi4fCSwcLS0/EWFyUmNFJ0goSTsv/EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EAB4RAQEBAQADAAMBAAAAAAAAAAABEQIDITESE0FR/9oADAMBAAIRAxEAPwDjoEM9Iws69KInagru7CzZtCgczp8vL+dIZKJguQpbUvP11aHnFNB5EunYE2yg9TqIY5RTE1Oqm6iscKTsyw2kDQ/fI68h79YfXf8AhKmmUXu0o4uVYQ3lTqlKNSvZIzb7nXpAaac82xNOPJLpzcE+HQ6kEjzJ2+IhrfxBIyeRmXc8RzeMKuUlRH9RMe01ZhtaZUNtqUpxRbSdkkqsATzIFtYjaZckMNB+mTLihwe7uXSzqteQjQ35m4MXCcMpFJmeC6la1NBTZGupUoH8ILrNUaleFwuE262vK8Gj4bE6D0sIBZxKzTKmplhOZs2sQSQkEG/7wv6wAty1BTNpmGVIIdbUVIbGhUB/Pyitew84EoZW2ttRvkuL89QfTWOhzEs3MM95klLS5Ksh5KwRmcI6Ab3NxYxJOotzbCS4nLMha5hJUm10gnMm3I6bfnBosjjNVpL8gpJUCUEAhQGhHWK7rHYUiSfQqi1qVUwlxSlMODQBJPL525RznEeHpuhz70q8nOEm6FoFwtHIiNOetRZik5RE7xkagx5BtFJM/Z5hRvGNeXTn5tyVQiXU7xG0hRNiBbX4x0U9htMLymBiN8vpSFlvhIzBJNgbb2uDr5Qu9gQ/31e/6Jz/AOkx2Rlh4doM5MFlwMGksoDxQchUHXCU5tr2tp5iJv1c+OPUnspVN4wqlBmqkpDUiw26mYaRqsL+yCDtpf2iR2ajygTiavzxGri2Gb+SWgr+3GYWnjimIKqqYpkqoOAFSlpsDqjKdPwN4pGas8uWQL24QJTr56/OKN+YusOp1Cje9/SCpOWcXItzCdULdUz62zAfgfaFZJFczRck45MTC1OAq4aQpSL6nl77RFVR9iZzFZCkqCLdCNYzSEfXZhlZsstZBztfT+uK+YadefmEqAzca9x1JtEy+/Z3m4Pmqs9NLeLi7XAKcux23+cZcUtakrcKglbdgQrX/L8oqpppxpTZcFgptNrc7iC2phedsjTKwbW62P5xXpnl/psolZMszKK4n0kwrhqClaBISQP3lAxXTlZfS+5leWVCYLl/20+Ie4PvFK2L91SAUlPMD+fKMISpM0A6PCpSb+8I8pgqFaE9TAXgVzMulAbXfUDRKvcfKAKnU5mflmhxlhTdlDxbEDQ/GK6bbLQeShV0pZSpRHppHqbbMq9wnN+GFD11+UPCUjqyt1a1BKSrUhIsLxrjbMJyukWjVtFxC3wxiSo4WqBn6SWQ+pstHiozjKbHa46CGr/XNi8/fp4/8U/3o59aMQYqU9yfa5i2W4tnpNxTzpcUpyXubnS2hGgAAHkIkIg3ESDINoxhwhLSVjwpBsD5xbUWeLLapFbSVsqeDoudQcqk6ehgCnN8VSBlvzEGTTRYeTYXsdvKMer7x0c83NWq0olppuebA+jPjSOaTofbf0ixRQ0vtmbZFytwlflsQfwPvFZS5Wbqs61KSwSpa9+iRzJMdNw/hiWpcuQ+5xllOW17JTy094x6tjaYQsWUByVpDM02FFviZR5AEgfhaFltrK6pJJulJ0HxH8Y7diMMuYem5RRKhwFBJJ1vbeOc06moNRefUArKohNx5xfPeRHXH5dNVPo/EDXeRkyjN/CGqaptEqzAlWZRMnMHRp9tRPj6KBOoMCPEM2zDfS/WNdEZcnhNOpuEtrSGldVBV/lHP111bsrr48Xj/GywkvMlLsywoWdICCOQN9flGptwzTi+8EKcDQQk3voEgD5QdWFlVYm3hZJU6okD9omKxpPjXcWClAX9o7ufceX16oGdIL+nJIgU7GCZ0nviwo3KTl9oHI3EXEPPOIRrGRuIivtQw884kQxIA6JIYaepNHlpyYVZUynNk/5ByB9IrJ1oLOo1MOE3jKXfk0pVJNvMkAWvmhanlNPuJUwNL3sI4tuvQk9YNww8aalbqAAtYCRpsBDK3W3VgBStevWFZhOVAEGMKsYi+1zDG8szkqtJVqoEXgZFM7s2opGmaMSL2VNjrFoHkOIyqtAm/VGlEsaiy5ONqdS2fC2FeE663EX/ABZMJ+py6GUn7qeV+kVs+22kZkDxfCMyitN9YUi99ECtJSmrTAtoVn5xWXB8JHVWnlaGPFElafW8kc+QhWUSg5DcEX/ER2eO+nB5JlVzxzLCuu8Qi7QPnrEUNo9pA4BHnGjIPEVvGbRki8AeDEjMSAGl2lMyy+LLLcTlI+jWb+xj03UZX7IVkUORgIT4SwVKUc4NiIGlZdp14rVsokpHrGXXO/XR4+r8NbLwcSDv8IMYOt4qZXwpAG0WTCrRz46pVq26bC2loLadPWKtCxaNgfCRCIZOv3SBfWJKu6CKp5/Mq5MESbmoEGF/Bc+wHEly11QgTrKTMvsBGV1NzvobDaOjrR4fSE7EdMfXPoelEKUpzwkI6xr47lY+SbCaRE2Tbzg2bk3ZZxTT7am3AdUqFiIDULG0dMcrWRpE+6mMx5J0A84A8HSJGVbxIDbnVkKIgqkpCntdo34nw3V8MTQYrUmtjN9h4eJpwfqr2v5bxYVrCVdwtT5apT7TBlJlYS24y9n1KSoX00uAYi+405uUe0QkQS06ALkwFhii17FEvNvUVuVcEqQHUOP5Vi4uLC2xsfYwvGrTQWQbJI0KSNQehjL9db/t5OXeL7bRnim0D4OpFYxQmYNMYQvu5AcK15ACdgI1h0WICkqsSMyTcH4HmIm84qdy/BJXeCpRdlpi2awDiR1pLqZVnKpIUAp4A2PUdYpJfMlwhQKVINlAjUEbiF+JflprYavLcRStCgKsNSN+XpGV0xtRbXnukrTooZbbEQVS6BXpuQYfYQ2qXebCm8zo+yfKDv8ARvEFhdhg2Vm1dBufWNJyy66KmL8OqqLYmJYKL6EHMFIsSPS/WOf/AKDmVTD0ulP1hlSQpF7GxBuRfe2nuI6/VpOoyCf9rSbamHBw8+mTyBKbW2jnk1KTNKmH5ySlmyw54QPF4Re/I3G3WNYxsVLeHErL6u9gpazWsjRViRYE63FtRbS43gCVpCZpKR3koeLQeKS1dISVhP2r763tbWx1EOsp2fYwnJVE4zT5AJmgXkl2ZWhxIWASCL+Q0N4TX6jO01TkiW223ZVwtOZmwVBTaiLa+ot8YcpI1QTNPBqXmgTxEBaltFKUpUnMFXBOtrXHIkC5jMXlRomK5CgS9ftJqkAUupmJFaSUg2tmygeEWSNb2sByiQ9PD5g6dd7Sez+rUetqS9PShytTKgM2bLdCz5g3BPMRow2TjbsQmaafpJ6ntqQ2BuVN+NoeqbJjdgKSf7PMAVet15vu81MnO3LrIzaJs2k+ZPLz+MLHYHVxT8SvUp1Y4VQY8IOxcRqPdJV7RKmnsLrBksZCT8XDqbBQR+sgFaT7BXvFL2oUX9A43qTKE5WJhfemdNAldyR6KzR1LAWDTQcfYmqUw0W5OXNpJxWykueNVv2RYR57S8ON45YwxV6Tdbcy4hpxaRY93d8VzzFrH4XMACUEHBXYu/ULlM9UgXEdc7tko9kgH0JhT7NaX+nMRyUotOZhgcd4W0yII0PxJSPeL/tzqqG52j4dlAEtSzfeHEJ0A0KED2Cvwiz7PUMYQwHU8VzrRUuYGdpvYqQnRCAf1lE+4ibDlwVUe0BEv2mt0/vYTTmViSdTn8JcXbxW8lEJ8tYrsdUlFLxM68Bll50cZCbfe2WPex/7o2ynat3hBcXhlhBOv/Eg3/ci6xA83i7A4q8qwEzMoouFoG5TbRab26a+ghYe431Ocfk+zqlvSj7jCyllOZtWU2ttCyiuVTnVJv8A9xi6rQdf7LKT3dpx1ZSwcraSo7dBCc3Lz4TrIzZJ0twVflDJ0TClSViCRnaVVDxiG/tqGqknTXzB5/CFeh05U/WGqc54gh0h423Sk+L3tb1hhwLT3KRJztXqiVSzXC2c0IQNVKI5fwgTA8yiVodXxbPJKUOlxTSOeRKjoPMq09IZNmIcWokcayUu3P8ACk5P6KaYBAQ5nA1PmnQj1Ec77b6CKbilFTYR9XqaM5IGnFTYK9xlPvDontPSs5jQGbnf6xfX+hBteLOP8ATL7UslE3KOFaWr5sqk6kA2G6D+MAc87KsXtUp5eHq3lcotRUU/SnwsrVoR+wrn0Jv1iQkz0mGdU+JtW14zDIXijFdZxU+27WJkLQ2btsNJytIvzCevmbmK6lzkxTKjK1GUUEvyjyXmyq9rpN7GxFwdiOYJiRIYOlY7XMS1alzdOeZpbTU00ppa2GXAsJIsbEuEA28oHw52pYhw5R2KVJNU52XYuGzMtLUsAm9rpWBYX6RIkGAu12tzWIKzM1apKQJiYACgyCEoAFgEgk6adTFriHHdXr9Gk6NMMyMtIyqkqQiUbWknKkpAJUpVwL3+MSJBgaqTOoebCFWDgH9KGygYqqOH2JlmSEq4zMEFbcyhSgNCDayha4PntEiRNVB9P7SKpSaezJMt00MS6A22Cy4VWG1/pI9ntYxEsXaYpQH60u7/AIkYiQEqMRY4rVdlDLVB1hDAN1NSrZQFfG6lE+9vKBaljqfm6AzRFtSbUkyEWTLtrCiE7BRKzfkTEiQBSMzrqiDayehhmwvi2oUEzH6PSwvjhOdL6CpOnMWUNdYkSAKSZlzNrdUljKlxSlFDY8Kbm9k35DlvEiRIA//Z" alt="Shuhua">
+          <div class="details">
+            <strong>Rainy day (2024 Remake ver.)</strong><br>
+            - 數位單曲<br>
+            - 發行日期：2024年7月16日<br>
+            - 7月11日在社群媒體上宣布將發行組合 BEAST《On Rainy Days》數位單曲重製版《Rainy Day》（2024 Remake ver.）
+            </div>
+        </div>
+            <div class="member">
+            <img src="data:image/jpeg;base64,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" alt="Shuhua">
+          <div class="details">
+            <strong>NOWHERE</strong><br>
+            - 第二張迷你專輯<br>
+            - 發行日期：2024年8月27日<br>
+            - 收錄曲目：Why Not?(主打)、Heart vs Head、Troublesome
+            </div>
+        </div>
+            <div class="member">
+            <img src="data:image/jpeg;base64,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" alt="Shuhua">
+          <div class="details">
+            <strong>Let's get it</strong><br>
+            - 數位單曲<br>
+            - 發行日期：2024年11月21日<br>
+          </div>
+        </div> 
+        <p>
+          <strong>社群連結：</strong><br>
+          <a href="https://www.instagram.com/CUBE_NOWADAYS" target="_blank">Instagram</a> |
+          <a href="https://youtube.com/@cube_nowadays?si=HNzVW7p4ZNREfuip" target="_blank">YouTube</a> |
+          <a href="https://x.com/CUBE_NOWADAYS" target="_blank">X</a>
+        </p>
+      </div>
+    </div>
+    <div class="back">
+      <a href="MUSICIANS.html">← 返回藝人列表</a>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById("menu");
+    const navMenu = document.getElementById("navMenu");
+    menuBtn.addEventListener("click", () => {
+      navMenu.style.display = navMenu.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!navMenu.contains(e.target) && e.target !== menuBtn) {
+        navMenu.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

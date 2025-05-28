@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUBE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e0f7ff; /* 淺藍主背景 */
+    }
+
+    header {
+      background-image: linear-gradient(to bottom, rgba(61, 66, 173, 0.574), rgba(63, 145, 203, 0.337)), 
+                        url("1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white;
+      padding: 2rem 1rem;
+      position: relative;
+      text-align: left;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      margin-left: 2.5rem;
+    }
+
+    nav {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 3.5rem;
+      left: 1rem;
+      background-color: #c1eefb;
+      color: #333;
+      list-style: none;
+      padding: 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-menu li {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .nav-menu li:last-child {
+      border-bottom: none;
+    }
+
+    .nav-menu li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .artist {
+      background-color: #dff6ff; /* 輕淺藍按鈕區背景 */
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 1.5rem;
+    }
+
+    .artist-btn {
+      background-color: #3db8ff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 1rem;
+      width: 200px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      transition: background-color 0.3s;
+    }
+    
+    .artist-btn:hover {
+      transform: scale(1.25); /* 鼠標移上去稍微放大 */
+    }
+
+    .artist-btn:hover {
+      background-color: #2ca3e1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav id="menu">&#9776;</nav>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="MUSICIANS.html">組合</a></li>
+      <li><a href="ACTORS.html">演員</a></li>
+      <li><a href="ENTERTAINERS.html">其他藝人</a></li>
+    </ul>
+  
+  </header>
+
+  <div class="container">
+    <h2>ARTIST</h2>
+    <div class="artist"> 
+      <button class="artist-btn">MUSICIANS</button>
+      <button class="artist-btn">ACTORS</button>
+      <button class="artist-btn">ENTERTAINERS</button>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById("menu");
+    const navMenu = document.getElementById("navMenu");
+    menuBtn.addEventListener("click", () => {
+      navMenu.style.display = navMenu.style.display === "block" ? "none" : "block";
+    });
+
+    const buttons = document.querySelectorAll(".artist-btn");
+    const pages = ["MUSICIANS.html", "ACTORS.html", "ENTERTAINERS.html"];
+    const colors = ['#3db8ff', '#61e8ff', '#0095a9'];
+
+    buttons.forEach((btn, i) => {
+      btn.style.backgroundColor = colors[i];
+      btn.addEventListener('click', () => {
+        window.location.href = pages[i];
+      });
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!navMenu.contains(e.target) && e.target !== menuBtn) {
+        navMenu.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

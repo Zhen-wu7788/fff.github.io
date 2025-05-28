@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ACTORS - CUBE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e0f7ff;
+    }
+
+    header {
+      background-image: linear-gradient(to bottom, rgba(61, 66, 173, 0.574), rgba(63, 145, 203, 0.337)), 
+                        url("1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white;
+      padding: 2rem 1rem;
+      position: relative;
+      text-align: left;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      margin-left: 2.5rem;
+    }
+
+    nav {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 3.5rem;
+      left: 1rem;
+      background-color: #c1eefb;
+      color: #333;
+      list-style: none;
+      padding: 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-menu li {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .nav-menu li:last-child {
+      border-bottom: none;
+    }
+
+    .nav-menu li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .actor-list {
+       display: flex;
+       flex-direction: column;  /* 垂直排列 */
+       align-items: center;     /* 置中對齊 */
+       gap: 2rem;
+    }
+
+    .musician-card {
+      padding: 0;
+      width: 250px;
+      text-align: center;
+      text-decoration: none; /* 移除 a 標籤底線 */
+      color: inherit;        /* 保持文字顏色 */
+      transition: transform 0.2s ease;
+      background: none;      /* 移除白色背景 */
+      box-shadow: none;      /* 移除陰影 */
+      border-radius: 0;      /* 移除圓角 */
+    }
+
+    .musician-card img {
+      width: 100%;
+      border-radius: 8px; /* 如果你要保留圖片圓角可以留著，不要就設為 0 */
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .musician-card h3 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .musician-card:hover {
+      transform: scale(1.25); /* 鼠標移上去稍微放大 */
+    }
+
+    @media (max-width: 600px) {
+      .musician-card {
+        width: 100%; /* 滿版顯示 */
+        }
+
+      .actor-list {
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav id="menu">&#9776;</nav>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="MUSICIANS.html">組合</a></li>
+      <li><a href="ACTORS.html">演員</a></li>
+      <li><a href="ENTERTAINERS.html">其他藝人</a></li>
+    </ul>
+    <h1>CUBE</h1>
+  </header>
+
+  <div class="container">
+    <h2>組合</h2>
+    <div class="actor-list">
+     <a href="ArtistDetail.html" class="musician-card">
+        <img src="https://media.zenfs.com/zh-tw/taisounds_com_380/6c182883998bc0c8c809d8ceb8b1b7fd" alt="i-dle">
+     </a>
+     <a href="ArtistDetail 1.html" class="musician-card">
+        <img src="https://megapx-assets.dcard.tw/images/26aa8625-0ea7-4150-8d1e-9303fa67114f/640.jpeg" alt="LIGHTSUM">
+     </a>
+     <a href="ArtistDetail 2.html" class="musician-card">
+        <img src="https://mir-s3-cdn-cf.behance.net/projects/404/ad2b80212479567.Y3JvcCwzMTcwLDI0ODAsMTY0LDA.jpg" alt="NOWADAYS">
+    </div><br><hr> 
+    <h2>前知名組合</h2>
+    <div class="actor-list">
+     <a href="ArtistDetail 3.html" class="musician-card">
+        <img src="https://cdn1.wishnote.tw/550/2016/10/27/550_702541_1477538030.webp" alt="4minute">
+     </a>
+     </div>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById("menu");
+    const navMenu = document.getElementById("navMenu");
+    menuBtn.addEventListener("click", () => {
+      navMenu.style.display = navMenu.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!navMenu.contains(e.target) && e.target !== menuBtn) {
+        navMenu.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

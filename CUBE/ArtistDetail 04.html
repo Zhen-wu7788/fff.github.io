@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>藝人介紹 - CUBE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e0f7ff;
+    }
+
+    header {
+      background-image: linear-gradient(to bottom, rgba(61, 66, 173, 0.574), rgba(63, 145, 203, 0.337)), 
+                        url("1.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 2rem 1rem;
+      position: relative;
+    }
+
+    header h1 {
+      margin-left: 2.5rem;
+    }
+
+    nav {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 3.5rem;
+      left: 1rem;
+      background-color: #c1eefb;
+      list-style: none;
+      padding: 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-menu li {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .nav-menu li:last-child {
+      border-bottom: none;
+    }
+
+    .nav-menu li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .profile img {
+      width: 250px;
+      border-radius: 10px;
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .info h2 {
+      margin-top: 0;
+    }
+
+    .info p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .back {
+      margin-top: 2rem;
+    }
+
+    .back a {
+      text-decoration: none;
+      background-color: #3db8ff;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .back a:hover {
+      background-color: #239fd9;
+    }
+    .member {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .member img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .details {
+      line-height: 1.6;
+    }
+    .member:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav id="menu">&#9776;</nav>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="MUSICIANS.html">組合</a></li>
+      <li><a href="ACTORS.html">演員</a></li>
+      <li><a href="ENTERTAINERS.html">其他藝人</a></li>
+    </ul>
+    <h1>CUBE</h1>
+  </header>
+
+  <div class="container">
+    <div class="profile">
+      <img src="https://static.wikia.nocookie.net/kpop/images/5/5e/Bak_Do_Ha_Boys_Planet_profile_photo_5.png/revision/latest/scale-to-width-down/1000?cb=20230102151029" alt="藝人照片">
+      <div class="info">
+        <h2>樸道夏</h2>
+        <p><strong>職業：</strong>演員</p>
+        <p>
+        - 擅長低音說唱。
+        - 參與於 2023 年 2 月 2 日播出的《男孩星球》，並在第 8 集中排名第 46 名後被淘汰。
+        </p><br><br><hr>
+        <strong>參與戲劇：</strong><br>
+          - 2025 U+tv 《初戀》  飾演許泰雄<br>
+          - 2024 ENA 《奈布》<br>
+          - 2024 MBN 《差距與憤世嫉俗》<br>
+          - 2024 TVING 《禹女王》  飾演青春南武<br>
+          - 2022 網路劇 《解除武裝的羅曼史》  飾演約旦<br><br>
+
+        <strong>參與綜藝：</strong><br>
+          - 2023 Mnet《BOYS PLANET》 選手
+        </p><hr>
+        <p>
+          <strong>社群連結：</strong><br>
+          <a href="https://www.instagram.com/clohaim" target="_blank">Instagram</a> 
+        </p>
+      </div>
+    </div>
+    <div class="back">
+      <a href="ACTORS.html">← 返回藝人列表</a>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById("menu");
+    const navMenu = document.getElementById("navMenu");
+    menuBtn.addEventListener("click", () => {
+      navMenu.style.display = navMenu.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!navMenu.contains(e.target) && e.target !== menuBtn) {
+        navMenu.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
