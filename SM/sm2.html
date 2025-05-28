@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM 娛樂公司</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #9ab8df;
+        }
+
+        header {
+            background-color: #ff99cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .sidebar {
+            background-color: #ffd6e8;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .artist-btn {
+            display: block;
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #ffb3d9;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        section.main,
+        .company-info {
+            background-color: #fff0f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .company-info h2 {
+            color: #614890;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .company-info p {
+            text-align: center;
+        }
+
+        section.main img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        section.main h2 {
+            color: #714eca;
+            text-align: center;
+        }
+
+        section.main p {
+            color: #020202;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .sidebar {
+                width: 30%;
+                margin-right: 16px;
+                max-height: none;
+            }
+
+            .content {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SM 娛樂</h1>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>藝人目錄</h2>
+            <a class="artist-btn" href="#hot">H.O.T</a>
+            <a class="artist-btn" href="#s.e.s">S.E.S</a>
+            <a class="artist-btn" href="#shinhwa">shinhwa</a>
+            <a class="artist-btn" href="#boa">BoA</a>
+            <a class="artist-btn" href="#tvxq">TVXQ</a>
+            <a class="artist-btn" href="#superjunior">Super Junior</a>
+            <a class="artist-btn" href="#snsd">Girls' Generation</a>
+            <a class="artist-btn" href="#shinee">SHINee</a>
+            <a class="artist-btn" href="#f(x)">f(x)</a>
+            <a class="artist-btn" href="#exo">EXO</a>
+            <a class="artist-btn" href="#redvelvet">Red Velvet</a>
+            <a class="artist-btn" href="#nct">NCT</a>
+            <a class="artist-btn" href="#aespa">aespa</a>
+            <a class="artist-btn" href="#riize">RIIZE</a>
+        </div>
+
+        <div class="content">
+            <section class="company-info">
+                <h2>公司介紹</h2>
+                <p>
+                    SM 娛樂（SM Entertainment）成立於 1995 年，是韓國最具代表性的娛樂公司之一，
+                    擁有多個引領韓流文化的偶像團體與藝人。該公司不僅在音樂領域，也在戲劇、綜藝與海外市場發展中居於領先地位。
+                </p>
+            </section>
+
+            <section class="main" id="boa">
+                <h2>H.O.T</h2>
+                <center><img src="https://cdn2.ettoday.net/images/3138/d3138913.jpg "alt="H.O.T 團體照片"></center>
+                 <p>韓國第一代偶像男團，由 SM 娛樂於 1996 年推出，是 K-pop 偶像文化的開創者。</p>
+            </section>
+
+            <section class="main" id="s.e.s">
+                <h2>S.E.S</h2>
+                <center><img src="https://preview.redd.it/1gt3b9z6av161.jpg?width=640&crop=smart&auto=webp&s=4be5924f1d41efdfac9ff7475be2f34b8e60fa2d" alt="S.E.S 團體照片"></center>
+                <p>S.E.S 是 SM 娛樂於 1997 年推出的第一個女子團體，被譽為韓國第一代女子天團。</p>
+            </section>
+
+             <section class="main" id="shinhwa">
+                <h2>shinhwa</h2>
+                <img src="https://0.soompi.io/wp-content/uploads/2016/03/27184021/shinhwa-star-daily-news.jpg?w=140&h=140&crop=1?s=900x600&e=t" alt="shinhwa 團體照片">
+                <p>Shinhwa 是 SM 娛樂於 1998 年推出的男子團體，後來離開 SM 成立自己公司持續活動。</p>
+            </section>
+
+            <section class="main" id="boa">
+                <h2>BoA</h2>
+                <center><img src="https://i.epochtimes.com/assets/uploads/2021/10/id13312527-200824061708100707-600x400.jpg "alt="BoA 團體照片"></center>
+                 <p>BoA 是 SM 娛樂於 2000 年推出的 solo 女歌手，有亞洲之星的美譽。</p>
+            </section>
+
+            <section class="main" id="tvxq">
+                <h2>TVXQ</h2>
+                <center><img src="https://i.kfs.io/artist/global/58063,0v10/fit/500x500.jpg" alt="TVXQ 團體照片"></center>
+                <p>TVXQ 是 2003 年出道的男子雙人團體，初期為五人，後來分裂為東方神起與 JYJ。</p>
+            </section>
+
+            <section class="main" id="superjunior">
+                <h2>Super Junior</h2>
+                <img src="https://s.yimg.com/ny/api/res/1.2/v8oEHLzOZCY2hzO5nG3q6A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTcyMTtjZj13ZWJw/https://media.zenfs.com/zh-tw/babyou_nownews_com_883/32c3668c9813899626d64ad039fe2180" alt="Super Junior 團體照片">
+                <p>於 2005 年推出的男子團體，以龐大成員數量與多元小分隊聞名。</p>
+            </section>
+
+            <section class="main" id="snsd">
+                <h2>Girls' Generation</h2>
+                <center><img src="https://truth.bahamut.com.tw/s01/201212/b14b2a155e6f50e7a074d619368be855.JPG" alt="少女時代 團體照片"></center>
+                <p>2007 年出道的女子團體，開創了 K-pop 女團的新巔峰。</p>
+            </section>
+
+            <section class="main" id="shinee">
+                <h2>SHINee</h2>
+                <img src="https://www.mtv.com.tw/uploads/files/22618/conversions/20230627-avex-taiwan-KPOP-SHINee%E7%AC%AC%E5%85%AB%E5%BC%B5%E6%AD%A3%E8%A6%8F%E5%B0%88%E8%BC%AFHARD%E5%AE%A3%E5%82%B3%E7%85%A7_2-xl.jpg" alt="SHINee 團體照片">
+                <p>2008 年出道的男子團體，以音樂性與舞台實力著稱。</p>
+            </section>
+
+            <section class="main" id="f(x)">
+                <h2>f(x)</h2>
+                <img src="https://lh3.googleusercontent.com/VQcMudR55EKlNeZCdhQKLy1dh_nojH8YAqwjXPAl515U1hFham1IRGWhcPWITm1X3yUHSQBHUYSWlh0=w1228-h511-p-l90-rj" alt="f(x) 團體照片">
+                <p>2009 年出道的女子團體，以實驗性與非主流風格獲得喜愛。</p>
+            </section>
+
+            <section class="main" id="exo">
+                <h2>EXO</h2>
+                <center><img src="https://a.ksd-i.com/a/2025-04-02/157546-1028419.jpg" alt="EXO 團體照片"></center>
+                <p>2012 年出道，初期分為韓中兩隊，後來整併為一團，是第三代男團代表。</p>
+            </section>
+
+            <section class="main" id="redvelvet">
+                <h2>Red Velvet</h2>
+                <img src="https://img.imageimg.net/artist/redvelvet-official/img/news_thumbnail_image_1106441.jpeg" alt="Red Velvet 團體照片">
+                <p>2014 年出道的女子團體，融合可愛與成熟雙重概念。</p>
+            </section>
+
+            <section class="main" id="nct">
+                <h2>NCT</h2>
+                <img src="https://nct-jp.net/assets/images/sp/slide_20240922.jpg" alt="NCT 團體照片">
+                <p>NCT 是 SM 的實驗性男團，包含多個小分隊如 NCT 127、Dream、WayV 等。</p>
+            </section>
+
+            <section class="main" id="aespa">
+                <h2>aespa</h2>
+                <img src="https://i0.wp.com/www.kedblog.com/wp-content/uploads/2023/11/aespa-dont-blink.jpg" alt="aespa 團體照片">
+                <p>2020 年出道，以虛擬角色與 AI 世界觀結合引起話題。</p>
+            </section>
+
+            <section class="main" id="riize">
+                <h2>RIIZE</h2>
+                <img src="https://6.soompi.io/wp-content/uploads/image/20250121180150_RIIZE.jpg?s=900x600&e=t" alt="RIIZE 團體照片">
+                <p>2023 年出道的男子新團體，以青春和成長為主題。</p>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
