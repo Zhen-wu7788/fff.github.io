@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>JYP Entertainment - 首頁</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="sidebar">
+  <h1>JYP</h1>
+  <ul>
+    <li><a href="index.html" class="active">首頁</a></li>
+    <li><a href="about.html">公司簡介</a></li>
+    <li><a href="artists.html">藝人介紹</a></li>
+  </ul>
+  <select class="lang-select">
+    <option>繁體中文</option>
+    <option>한국어</option>
+    <option>English</option>
+    <option>日本語</option>
+  </select>
+</nav>
+
+<main>
+  <section class="carousel" aria-label="藝人輪播圖">
+    <img src="twice.jpg" alt="TWICE 團體照" class="active" />
+    <img src="straykids.jpg" alt="Stray Kids 團體照" />
+    <img src="itzy.jpg" alt="ITZY 團體照" />
+    <img src="nmixx.jpg" alt="NMIXX 團體照" />
+  </section>
+
+  <section class="news-section">
+    <h2>最新消息</h2>
+    <ul class="news-list">
+      <li><strong>[NMIXX]</strong> 6月新專輯預告公開</li>
+      <li><strong>[Stray Kids]</strong> 世界巡演即將展開</li>
+      <li><strong>[ITZY]</strong> 日本Fan Meeting 圓滿落幕</li>
+    </ul>
+  </section>
+</main>
+
+<script>
+  const slides = document.querySelectorAll('.carousel img');
+  let current = 0;
+  const slideInterval = 4000; // 4秒切換一次
+
+  function showSlide(index) {
+    slides.forEach((img, i) => {
+      img.classList.toggle('active', i === index);
+    });
+  }
+
+  setInterval(() => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }, slideInterval);
+</script>
+
+</body>
+</html>

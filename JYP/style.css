@@ -1,0 +1,231 @@
+/* Reset & 基礎設定 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #f9fafb;
+  color: #1a1a1a;
+  display: flex;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* 側欄 */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 220px;
+  background: #fff;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+  z-index: 10;
+}
+
+.sidebar h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #111827;
+  margin-bottom: 3rem;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+.sidebar ul {
+  list-style: none;
+  flex-grow: 1;
+}
+
+.sidebar ul li {
+  margin-bottom: 1.8rem;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  color: #111827;
+  border-bottom-color: #2563eb;
+}
+
+.lang-select {
+  margin-top: auto;
+  border: none;
+  font-size: 1rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+  background: #f3f4f6;
+  color: #374151;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.lang-select:hover {
+  background: #e5e7eb;
+}
+
+/* 內容主區 */
+main {
+  margin-left: 220px;
+  padding: 3rem 4rem;
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+/* 大標題 */
+h2 {
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: #111827;
+  margin-bottom: 1.6rem;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+/* 次標題 */
+h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 6px;
+  user-select: none;
+}
+
+/* 藝人清單 */
+.artist-list {
+  list-style: none;
+}
+
+.artist-list li {
+  margin-bottom: 1rem;
+}
+
+.artist-list li a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #2563eb;
+  font-size: 1.15rem;
+  transition: color 0.3s ease;
+}
+
+.artist-list li a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* 藝人介紹圖片 */
+.artist-img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+  user-select: none;
+}
+
+/* 最新消息列表 */
+.news-list {
+  list-style: none;
+}
+
+.news-list li {
+  font-weight: 500;
+  color: #4b5563;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background 0.2s ease;
+  cursor: default;
+}
+
+.news-list li strong {
+  color: #2563eb;
+}
+
+/* 輪播區 */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  box-shadow: 0 12px 48px rgba(37,99,235,0.15);
+  user-select: none;
+}
+
+.carousel img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.carousel img.active {
+  opacity: 1;
+  position: relative;
+}
+
+/* 響應式 */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    padding: 1.5rem 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sidebar h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+  .sidebar ul {
+    display: flex;
+    flex-grow: 0;
+  }
+  .sidebar ul li {
+    margin: 0 1rem 0 0;
+  }
+  main {
+    margin-left: 0;
+    padding: 2rem 1.5rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .carousel {
+    height: 200px;
+  }
+}
